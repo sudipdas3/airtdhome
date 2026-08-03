@@ -84,18 +84,12 @@
   h1.title{
     font-family: 'Kalam', cursive;
     font-weight: 700;
-    font-size: clamp(42px, 8vw, 92px);
-    line-height: 1.08;
+    font-size: clamp(32px, 6.5vw, 68px);
+    line-height: 1.15;
     margin: 0 0 8px 0;
     color: var(--chalk);
     text-shadow: 0 0 1px rgba(244,240,228,0.4), 0 0 18px rgba(244,240,228,0.08);
     letter-spacing: 0.5px;
-  }
-  h1.title .line2{
-    display: block;
-    color: var(--yellow);
-    font-size: clamp(30px, 5.5vw, 58px);
-    margin-top: 4px;
   }
 
   .underline{
@@ -243,7 +237,7 @@
 
   <p class="eyebrow">a tribute in chalk and gratitude</p>
 
-  <h1 class="title">AIR TEACHERS' DAY<span class="line2">2K26</span></h1>
+  <h1 class="title">AIR Teachers' Day 2K26</h1>
 
   <svg class="underline" viewBox="0 0 260 18" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M4 9 Q 65 2, 130 9 T 256 9" stroke="#E3B23C" stroke-width="3" stroke-linecap="round" fill="none"/>
@@ -253,6 +247,12 @@
     Every lesson begins with someone who cared enough to teach it.
     Join us as we celebrate <strong>AIR Teachers' Day 2K26</strong> —
     a day set aside to say thank you.
+  </p>
+
+  <p class="tagline">
+    Welcome to AIR Teachers' Day 2K26! This web application helps users
+    manage and organize data for teachers' day celebrations seamlessly
+    via Google Workspace integration.
   </p>
 
   <div class="portal-badge">
@@ -282,131 +282,9 @@
 </div>
 
 <div class="footer-links">
-  <a id="link-privacy" href="#" target="_blank" rel="noopener">Privacy Policy</a>
-  <a id="link-terms" href="#" target="_blank" rel="noopener">Terms of Service</a>
+  <a href="/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+  <a href="/terms" target="_blank" rel="noopener">Terms of Service</a>
 </div>
-
-<template id="tpl-privacy">
-  <p class="eyebrow">AIR Teachers' Day 2K26</p>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: August 2026</p>
-
-  <svg class="underline small" viewBox="0 0 180 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 7 Q 45 1, 90 7 T 176 7" stroke="#E3B23C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-  </svg>
-
-  <div class="paper-card">
-    <h2>Overview</h2>
-    <p>This Privacy Policy explains how the AIR Teachers' Day 2K26 registration portal collects, uses, and protects information from participants who register for the event.</p>
-
-    <h2>Information we collect</h2>
-    <p>When you register through the portal, we may collect:</p>
-    <ul>
-      <li><strong>Contact details</strong> &mdash; name, email address, and phone number.</li>
-      <li><strong>Institutional details</strong> &mdash; school or department name and role.</li>
-      <li><strong>Event preferences</strong> &mdash; sessions or activities you select during registration.</li>
-    </ul>
-
-    <h2>How we use your information</h2>
-    <p>Registration information is used to confirm your participation, send event updates, coordinate logistics, and share materials related to AIR Teachers' Day 2K26. We do not use your information for unrelated marketing.</p>
-
-    <h2>Sharing of information</h2>
-    <p>Your information is shared only with the organizing team and volunteers directly involved in running the event. We do not sell or rent participant data to third parties.</p>
-
-    <h2>Data retention</h2>
-    <p>Registration records are retained only as long as needed to manage the event and follow-up communications, after which they are securely deleted.</p>
-
-    <h2>Your choices</h2>
-    <p>You may request to review, correct, or delete the information you submitted by contacting the organizing team.</p>
-
-    <h2>Contact</h2>
-    <p>Questions about this policy can be directed to the AIR Teachers' Day 2K26 organizing committee.</p>
-  </div>
-</template>
-
-<template id="tpl-terms">
-  <p class="eyebrow">AIR Teachers' Day 2K26</p>
-  <h1>Terms of Service</h1>
-  <p class="updated">Last updated: August 2026</p>
-
-  <svg class="underline small" viewBox="0 0 180 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 7 Q 45 1, 90 7 T 176 7" stroke="#E3B23C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-  </svg>
-
-  <div class="paper-card">
-    <h2>Acceptance of terms</h2>
-    <p>By registering for AIR Teachers' Day 2K26 through this portal, you agree to the terms outlined on this page.</p>
-
-    <h2>Registration and accuracy</h2>
-    <p>You agree to provide accurate and current information during registration. The organizing committee may use the details you submit to confirm your seat, share updates, and manage event logistics.</p>
-
-    <h2>Event changes</h2>
-    <p>The organizing committee may adjust the event date, time, venue, or schedule if circumstances require it. Registered participants will be notified of any significant changes.</p>
-
-    <h2>Conduct</h2>
-    <p>Participants are expected to engage respectfully with organizers, fellow attendees, and event staff throughout AIR Teachers' Day 2K26. The committee may decline entry or participation to anyone who violates this expectation.</p>
-
-    <h2>Photography and media</h2>
-    <p>Event photos or recordings may be taken during AIR Teachers' Day 2K26 for commemorative or promotional use. By attending, you consent to being included in such media unless you inform the organizers otherwise in advance.</p>
-
-    <h2>Changes to these terms</h2>
-    <p>These terms may be updated from time to time. Continued registration or participation after changes are posted constitutes acceptance of the revised terms.</p>
-
-    <h2>Contact</h2>
-    <p>Questions about these terms can be directed to the AIR Teachers' Day 2K26 organizing committee.</p>
-  </div>
-</template>
-
-<script>
-  function buildLegalPageHtml(name){
-    var tpl = document.getElementById('tpl-' + name);
-    var innerContent = tpl.innerHTML;
-
-    var pageStyles = [
-      "body{margin:0;padding:0;background:#24382D;font-family:'Work Sans',sans-serif;color:#F4F0E4;min-height:100vh;}",
-      ".board-frame{position:fixed;inset:0;border:14px solid #5A3E2B;box-shadow:inset 0 0 0 3px #3d2a1c, inset 0 0 40px rgba(0,0,0,0.5);pointer-events:none;z-index:1;}",
-      ".page{position:relative;z-index:2;max-width:720px;margin:0 auto;padding:64px 28px 80px 28px;}",
-      ".back-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#7FA8A0;background:transparent;border:none;cursor:pointer;text-decoration:none;margin-bottom:28px;border-bottom:1px dotted #7FA8A0;padding:0 0 2px 0;font-family:'Work Sans',sans-serif;}",
-      ".back-link:hover{color:#E3B23C;border-color:#E3B23C;}",
-      ".page .eyebrow{font-family:'Kalam',cursive;font-size:17px;color:#7FA8A0;transform:rotate(-1deg);margin:0 0 4px 0;}",
-      ".page h1{font-family:'Kalam',cursive;font-weight:700;font-size:clamp(34px,6vw,52px);margin:0 0 6px 0;color:#F4F0E4;}",
-      ".page .updated{font-size:13px;color:#C9C6B8;margin:0 0 32px 0;}",
-      ".underline.small{width:180px;height:14px;margin:0 0 32px 0;}",
-      ".paper-card{background:#FBF7EC;border-radius:4px;padding:40px 36px;box-shadow:0 12px 34px rgba(0,0,0,0.35);}",
-      ".paper-card h2{font-family:'Kalam',cursive;font-weight:700;font-size:22px;color:#C97158;margin:32px 0 10px 0;}",
-      ".paper-card h2:first-child{margin-top:0;}",
-      ".paper-card p{font-size:15px;line-height:1.75;color:#57544A;margin:0 0 14px 0;}",
-      ".paper-card ul{margin:0 0 14px 0;padding-left:20px;}",
-      ".paper-card li{font-size:15px;line-height:1.75;color:#57544A;margin-bottom:6px;}",
-      ".paper-card strong{color:#2C2A22;font-weight:600;}",
-      "@media (max-width:520px){.paper-card{padding:28px 22px;}}"
-    ].join(" ");
-
-    return "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\">" +
-      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" +
-      "<title>" + (name === 'privacy' ? "Privacy Policy" : "Terms of Service") + " &mdash; AIR Teachers' Day 2K26</title>" +
-      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">" +
-      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>" +
-      "<link href=\"https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap\" rel=\"stylesheet\">" +
-      "<style>" + pageStyles + "</style></head><body>" +
-      "<div class=\"board-frame\"></div>" +
-      "<div class=\"page\">" +
-      "<button class=\"back-link\" type=\"button\" onclick=\"window.close()\">&larr; Close this tab</button>" +
-      innerContent +
-      "</div></body></html>";
-  }
-
-  function wireLegalLink(linkId, templateName){
-    var link = document.getElementById(linkId);
-    if (!link) return;
-    var html = buildLegalPageHtml(templateName);
-    var blob = new Blob([html], { type: 'text/html' });
-    link.href = URL.createObjectURL(blob);
-  }
-
-  wireLegalLink('link-privacy', 'privacy');
-  wireLegalLink('link-terms', 'terms');
-</script>
 
 </body>
 </html>
